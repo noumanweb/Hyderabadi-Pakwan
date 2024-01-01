@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <title>Hyderabadi Pakwan</title>
+    <link rel="stylesheet" href="css/Primary_Nav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link
+      rel="stylesheet"
+      href="css/Carsouel.css"
+      type="text/css"
+      media="all"
+    />
+	<link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/animate.css" type="text/css" media="all" />
+    <link rel="icon" type="image/x-icon" href="images\Favicon.png" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <style>
+	h2{
+	text-align:center;
+	padding: 20px 0 20px;
+	}
+	a{
+	text-decoration:none;
+	color:#FFDE59;
+	}
+	a:hover{
+	  text-decoration:none;
+	  <!-- color:white; -->
+	  <!-- background:black; -->
+  }
+      .fa {
+        padding: 20px;
+        font-size: 30px;
+        width: 50px;	
+        text-align: center;
+        text-decoration: none;
+      }
+      .fa:hover {
+        color: #0f52ba;
+      }
+
+      .fa-facebook {
+        color: white;
+        font-family: fontawesome;
+      }
+
+      .fa-instagram {
+        color: white;
+        font-family: fontawesome
+      }
+      .carousel-inner .item img {
+		width: 100%;
+		}
+	
+    </style>
+  </head>
+  <body>
+    <!--Primary Navigation-->
+    <div class="Primarynavbar animated">
+      <a title="Logo" href="Index.html" 
+        ><img width="200" height="100" src="images\Hyderabadi Pakwan.gif"
+      /></a>
+      <div class="Main-Menu">
+        <div style="margin-top: 70px; margin-bottom: 110px">
+          <a title="Home" href="Index.html">HOME</a>
+          <!--dropdown-menu
+			<div class="dropdown-menu">
+				  <a class="menu" title="Practice Areas" href="Practice_Areas.html">PRATICE AREAS</a>
+					  <div class="dropdown-menu-content">
+						<a title="WILLS AND ESTATE LAW" href="WILLS.html">WILLS AND ESTATE LAW</a>
+						
+					  </div>
+				</div>-->
+          <a title="Contact Us" href="menu.html">MENU</a>
+          <a title="Contact Us" href="Contact_Us.html">CONTACT US</a>
+		  <div style="float: right">
+            <!-- <a target=”_blank” href="#" class="fab fa-facebook"></a> -->
+            <a target=”_blank” href="https://www.instagram.com/hyderabadi_pakwan2170/" class="fab fa-instagram"></a>
+			<a href="tel:4378680031">Mobile: (437)-868-0031</a>
+          </div>
+        </div>
+      </div>
+    </div>
+	<!--Welcome Content-->
+		<div class="hero-image" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),url(images/Butter_Chicken.jpg)">
+			  <div class="hero-text">
+				<h1 style="font-size:50px; color:white;">MENU</h1>
+				</div>
+				</div>	
+		<div class="row">			
+			<div class="inside_content">
+			<!-- <h1 style="text-align: center">MENU</h1><br> -->
+				<!-- <img  src="images/menu.jpg" alt="MENU" height=600 width=400> -->
+				<h2>MENU</h2>
+				<img id="myImg" src="images/menu.jpg" alt="" style="width:400px; height:600px">
+
+					<!-- The Mo	dal -->
+					<div id="myModal" class="modal">
+					  <span class="close">&times;</span>
+					  <img class="modal-content" id="img01">
+					  <div id="caption"></div>
+					</div>
+
+					<script>
+					// Get the modal
+					var modal = document.getElementById("myModal");
+
+					// Get the image and insert it inside the modal - use its "alt" text as a caption
+					var img = document.getElementById("myImg");
+					var modalImg = document.getElementById("img01");
+					var captionText = document.getElementById("caption");
+					img.onclick = function(){
+					  modal.style.display = "block";
+					  modalImg.src = this.src;
+					  captionText.innerHTML = this.alt;
+					}
+
+					// Get the <span> element that closes the modal
+					var span = document.getElementsByClassName("close")[0];
+
+					// When the user clicks on <span> (x), close the modal
+					span.onclick = function() { 
+					  modal.style.display = "none";
+					}
+					</script>
+				<br>
+				<p>We also take party and catering orders.</p>
+				<p>Call us now!!! <a href="tel:4378680031">Mobile: (437)-868-0031</a> </p>
+				<br><br>	
+			</div>
+			<main id="main">
+			<h2>Our Specials</h2>
+				<div class="slider-container" style="allowfullscreen="" loading="lazy" ">
+					<img style="display:block;" class="slider-image smooth" src="images\haleem.jpg"> 
+			
+			<img class="slider-image smooth" src="images\Veg Biryani.jpeg"> 
+					<img class="slider-image smooth" src="images\Paya.jpg"> 
+					<img class="slider-image smooth" src="images\hero.jpg"> 
+					<img class="slider-image smooth" src="images\2.jpg">					 
+					<img class="slider-image smooth" src="images\3.jpg">					 
+					<img class="slider-image smooth" src="images\5.jpg"> 
+					<button type="button" onclick="prevSlide()" class="slider-button" id="prev"><i class="fa-solid fa-caret-left" style="background: grey;
+			padding: 5px;"></i></button>
+					<button type="button" class="slider-button" id="next"><i class="fa-solid fa-caret-right"style="background: grey;
+			padding: 5px;"></i></button>
+				</div>
+			</main>
+
+    <script src="script.js"></script>
+	
+			<br><br><br>
+		<!-- <div style="padding-bottom:65%"> -->
+		<!-- </div> -->
+	</div>
+	<!--Footer Section-->
+    <div class="footer">
+      <p>© 2023 WATAN DARBAR. All Rights Reserved. Powered by WD</p>
+    </div>
+    </body>
+</html>
